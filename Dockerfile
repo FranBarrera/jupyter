@@ -1,5 +1,7 @@
 FROM debian:jessie
 
+USER root
+
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install ipython3 python3
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install npm nodejs-legacy
@@ -8,8 +10,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y install python3-pip
 RUN pip3 install "ipython[notebook]"
 RUN pip3 install "ipython[notebook]" --upgrade
 RUN pip3 install jupyterhub
-
-USER root
 
 EXPOSE 8000
 
