@@ -1,20 +1,20 @@
 # Jupyter
 
-Base docker image to run Jupyter
+## Base docker image to run Jupyter
 
-To create the base image debian/jupyter, execute the following command:
+## To create the base image debian/jupyter, execute the following command:
 
 ```sh
 # git clone https://github.com/FranBarrera/jupyter.git
 # docker build -t debian/jupyter .
 ```
 
-git clone https://github.com/FranBarrera/jupyter.git
-docker build -t debian/jupyter .
+## Start your image binding the external ports 8000 in all interfaces to your container:
 
-Start your image binding the external ports 8000 in all interfaces to your container:
+```sh
+#docker run -d -p 8000:8000 debian/jupyter
+```
 
-docker run -d -p 8000:8000 debian/jupyter
-Test your deployment:
+## Test your deployment:
 
 http://IP_HOST:8000
