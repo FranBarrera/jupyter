@@ -4,14 +4,14 @@
 
 ## To create the base image debian/jupyter, execute the following command:
 
-```sh
+```bash
 # git clone https://github.com/FranBarrera/jupyter.git
 # docker build -t debian/jupyter .
 ```
 
 ## Start your image binding the external ports 8000 in all interfaces to your container:
 
-```sh
+```bash
 #docker run -d -p 8000:8000 debian/jupyter
 ```
 
