@@ -4,6 +4,11 @@ Base docker image to run Jupyter
 
 To create the base image debian/jupyter, execute the following command:
 
+```sh
+# git clone https://github.com/FranBarrera/jupyter.git
+# docker build -t debian/jupyter .
+```
+
 git clone https://github.com/FranBarrera/jupyter.git
 docker build -t debian/jupyter .
 
