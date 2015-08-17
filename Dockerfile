@@ -11,4 +11,4 @@ RUN pip3 install jupyterhub
 
 EXPOSE 8000
 
-CMD jupyter
+CMD jupyterhub
