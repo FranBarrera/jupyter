@@ -9,7 +9,8 @@ RUN pip3 install "ipython[notebook]"
 RUN pip3 install "ipython[notebook]" --upgrade
 RUN pip3 install jupyterhub
 
+USER root
+
 EXPOSE 8000
 
-
-CMD ["scl", "enable", "ror40", "jupyterhub"]
+CMD ["/bin/bash", "jupyterhub"]
