@@ -1,13 +1,13 @@
 FROM debian:jessie
 
-DEBIAN_FRONTEND=noninteractive apt-get -y update
-DEBIAN_FRONTEND=noninteractive apt-get -y install ipython3 python3
-DEBIAN_FRONTEND=noninteractive apt-get -y install npm nodejs-legacy
-npm install -g configurable-http-proxy
-DEBIAN_FRONTEND=noninteractive apt-get -y install python3-pip
-pip3 install "ipython[notebook]"
-pip3 install "ipython[notebook]" --upgrade
-pip3 install jupyterhub
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install ipython3 python3
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install npm nodejs-legacy
+RUN npm install -g configurable-http-proxy
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y install python3-pip
+RUN pip3 install "ipython[notebook]"
+RUN pip3 install "ipython[notebook]" --upgrade
+RUN pip3 install jupyterhub
 
 EXPOSE 8000
 
