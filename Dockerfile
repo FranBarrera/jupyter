@@ -1,9 +1,5 @@
 FROM debian:jessie
 
-# ENV HOME /root
-#USER root
-
-
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install ipython3 python3
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install npm nodejs-legacy
