@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-USER root
+# USER root
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y install ipython3 python3
