@@ -18,6 +18,3 @@
 ## Test your deployment:
 
 http://IP_HOST:8000
-
-* User - test
-* Pass - test
