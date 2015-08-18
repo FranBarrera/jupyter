@@ -1,5 +1,6 @@
 FROM debian:jessie
 
+ENV HOME /root
 USER root
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
