@@ -15,5 +15,5 @@ RUN pip3 install jupyterhub
 
 USER 1050
 EXPOSE 8000
-
+USER 1050
 CMD jupyterhub
